@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+'use strict';
+
+const e = React.createElement;
+
 class Pie extends Component {
     render() {
         return (
@@ -17,5 +21,8 @@ class Pie extends Component {
         );
     }
 }
+
+const domContainer = document.querySelector('#pie');
+ReactDOM.render(e(Pie), domContainer);
 
 export default Pie;
