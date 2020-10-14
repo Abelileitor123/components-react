@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+'use strict';
+
+const e = React.createElement;
+
 class Cabeza extends Component {
     render() {
         let logo = "este es el logo";
@@ -84,5 +88,8 @@ class Cabeza extends Component {
         );
     }
 }
+
+const domContainer = document.querySelector('#cabeza');
+ReactDOM.render(e(Cabeza), domContainer);
 
 export default Cabeza;
